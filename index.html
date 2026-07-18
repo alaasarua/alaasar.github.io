@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdulrhman Alaasar — English Teacher</title>
+<meta name="description" content="English Teacher · TESOL Certified · C2 English · 4 Languages. Conversational, Business, and IELTS/TOEFL preparation. Book a free trial lesson.">
+<meta property="og:title" content="Abdulrhman Alaasar — English Teacher">
+<meta property="og:description" content="TESOL Certified · C2 English · 4 Languages. Book a free trial lesson.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alaasarua.github.io">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Abdulrhman Alaasar — English Teacher">
+<meta name="twitter:description" content="TESOL Certified · C2 English · 4 Languages. Book a free trial lesson.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #12213B;
+    --navy-deep: #0C1728;
+    --navy-card: #1B2C4A;
+    --navy-card-hover: #223762;
+    --gold: #E0A93B;
+    --gold-soft: #F0C46B;
+    --cream: #F4EFE3;
+    --text-dim: #9DB0CE;
+    --text-mute: #6E82A6;
+    --line: rgba(224,169,59,0.18);
+    --tg: #2AABEE;
+    --wa: #25D366;
+    --cal: #E0A93B;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background:
+      radial-gradient(1100px 620px at 50% -8%, #24406e 0%, transparent 60%),
+      radial-gradient(800px 500px at 88% 108%, rgba(224,169,59,0.10) 0%, transparent 60%),
+      var(--navy-deep);
+    color: var(--cream);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 56px;
+    line-height: 1.5;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ---------- Avatar ---------- */
+  .avatar-wrap {
+    position: relative;
+    width: 132px; height: 132px;
+    margin-bottom: 22px;
+    display: grid;
+    place-items: center;
+  }
+  .avatar-ring {
+    position: absolute; inset: 0;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, var(--gold), var(--gold-soft), transparent 55%, var(--gold));
+    animation: spin 7s linear infinite;
+    padding: 3px;
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px));
+            mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px));
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .avatar-ring { animation: none; } }
+
+  .avatar {
+    width: 112px; height: 112px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: linear-gradient(145deg, #24406e, #12213B);
+    display: grid; place-items: center;
+    font-family: 'Fraunces', serif;
+    font-size: 46px; font-weight: 600;
+    color: var(--gold-soft);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    z-index: 1;
+  }
+
+  /* ---------- Identity ---------- */
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .tagline {
+    font-size: 15px;
+    color: var(--gold-soft);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  /* ---------- Credibility chips ---------- */
+  .chips {
+    display: flex; flex-wrap: wrap;
+    justify-content: center; gap: 7px;
+    margin-bottom: 12px;
+  }
+  .chip {
+    font-size: 11.5px; font-weight: 600;
+    letter-spacing: 0.4px;
+    color: var(--text-dim);
+    border: 1px solid var(--line);
+    background: rgba(224,169,59,0.05);
+    padding: 5px 11px;
+    border-radius: 100px;
+    text-transform: uppercase;
+  }
+
+  /* ---------- What I teach ---------- */
+  .teach {
+    font-size: 13.5px;
+    color: var(--text-dim);
+    text-align: center;
+    margin-bottom: 18px;
+    max-width: 340px;
+  }
+  .teach b { color: var(--cream); font-weight: 600; }
+
+  /* ---------- Services ---------- */
+  .services {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+    margin-bottom: 26px;
+  }
+  .svc {
+    background: rgba(255,255,255,0.035);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 12px 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .svc-head {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--gold-soft);
+    letter-spacing: 0.2px;
+  }
+  .svc-body {
+    font-size: 11px;
+    color: var(--text-dim);
+    line-height: 1.45;
+  }
+  @media (max-width: 380px) {
+    .services { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Links ---------- */
+  .links { width: 100%; display: flex; flex-direction: column; gap: 12px; }
+
+  .card {
+    display: flex; align-items: center; gap: 14px;
+    background: var(--navy-card);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-left: 3px solid var(--accent, var(--gold));
+    border-radius: 14px;
+    padding: 15px 17px;
+    text-decoration: none;
+    color: var(--cream);
+    transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
+    position: relative;
+  }
+  .card:hover, .card:focus-visible {
+    background: var(--navy-card-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.32);
+    outline: none;
+  }
+  .card:focus-visible { border-color: var(--gold-soft); }
+
+  .ic {
+    width: 40px; height: 40px; flex-shrink: 0;
+    border-radius: 11px;
+    display: grid; place-items: center;
+    background: rgba(255,255,255,0.06);
+  }
+  .ic svg { width: 22px; height: 22px; display: block; }
+
+  .txt { flex: 1; min-width: 0; }
+  .name { font-size: 15.5px; font-weight: 600; letter-spacing: 0.1px; }
+  .desc { font-size: 12.5px; color: var(--text-mute); margin-top: 1px; }
+  .arrow { color: var(--text-mute); font-size: 17px; flex-shrink: 0; transition: transform .18s ease, color .18s ease; }
+  .card:hover .arrow { transform: translateX(3px); color: var(--gold-soft); }
+
+  /* Hero button */
+  .hero {
+    background: linear-gradient(135deg, var(--gold) 0%, #cf9526 100%);
+    border: none;
+    border-left: none;
+    color: #241a05;
+    padding: 17px;
+    justify-content: center;
+    gap: 11px;
+    box-shadow: 0 8px 24px rgba(224,169,59,0.28);
+    margin-bottom: 4px;
+  }
+  .hero:hover, .hero:focus-visible {
+    background: linear-gradient(135deg, var(--gold-soft) 0%, var(--gold) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(224,169,59,0.42);
+  }
+  .hero .hero-ic { width: 22px; height: 22px; }
+  .hero .hero-ic svg { width: 22px; height: 22px; }
+  .hero .hero-label { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.15; }
+  .hero .hero-main { font-family: 'Fraunces', serif; font-size: 17px; font-weight: 600; }
+  .hero .hero-sub { font-size: 12px; font-weight: 500; color: #5c4410; }
+
+  /* section label */
+  .section-label {
+    align-self: flex-start;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 1.6px; text-transform: uppercase;
+    color: var(--text-mute);
+    margin: 18px 0 2px 4px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer { margin-top: 30px; text-align: center; }
+  .langs {
+    display: flex; align-items: center; justify-content: center;
+    gap: 8px; flex-wrap: wrap;
+    font-size: 12.5px; color: var(--text-dim);
+    margin-bottom: 8px;
+  }
+  .langs .dot { color: var(--gold); opacity: 0.6; }
+  .loc {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    font-size: 13px; color: var(--text-dim); margin-bottom: 4px;
+  }
+  .flag-svg {
+    width: 22px; height: 15px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.12);
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  @media (max-width: 380px) {
+    h1 { font-size: 26px; }
+    .tagline { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <img class="avatar" src="photo.jpg" alt="Abdulrhman Alaasar">
+    </div>
+
+    <h1>Abdulrhman Alaasar</h1>
+    <p class="tagline">English Teacher · Online</p>
+
+    <div class="chips">
+      <span class="chip">TESOL Certified</span>
+      <span class="chip">C2 English</span>
+      <span class="chip">4 Languages</span>
+    </div>
+
+    <p class="teach">
+      For teens, adults, and professionals. Lessons in English with support in Arabic, Ukrainian &amp; Russian.
+    </p>
+
+    <div class="services">
+      <div class="svc">
+        <span class="svc-head">Exam preparation</span>
+        <span class="svc-body">IELTS · TOEFL · Cambridge · PTE · TOEIC · OET · Duolingo</span>
+      </div>
+      <div class="svc">
+        <span class="svc-head">Professional English</span>
+        <span class="svc-body">Business &amp; corporate · Executive coaching · Interviews · CV &amp; resume · English for IT</span>
+      </div>
+      <div class="svc">
+        <span class="svc-head">Academic English</span>
+        <span class="svc-body">University admission · Studying abroad · Essay &amp; writing skills</span>
+      </div>
+      <div class="svc">
+        <span class="svc-head">General English</span>
+        <span class="svc-body">Conversation · Travel · Intensive courses · All levels, A1 to C2</span>
+      </div>
+    </div>
+
+    <div class="links">
+
+      <!-- HERO: pre-filled Telegram trial booking -->
+      <a class="card hero" href="https://t.me/AbdurahmanUA?text=Hi!%20I%27d%20like%20to%20book%20a%20free%20trial%20English%20lesson." target="_blank" rel="noopener noreferrer">
+        <span class="hero-ic">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 11l3 3L22 4" stroke="#241a05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke="#241a05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="hero-label">
+          <span class="hero-main">Book a free trial lesson</span>
+          <span class="hero-sub">Free 25-minute lesson to get started</span>
+        </span>
+      </a>
+
+      <!-- Calendly -->
+      <a class="card" style="--accent:#E0A93B" href="https://calendly.com/alaasar" target="_blank" rel="noopener noreferrer">
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4.5" width="18" height="16" rx="2.5" stroke="#E0A93B" stroke-width="1.8"/><path d="M3 9h18" stroke="#E0A93B" stroke-width="1.8"/><path d="M8 2.5v4M16 2.5v4" stroke="#E0A93B" stroke-width="1.8" stroke-linecap="round"/><circle cx="8.5" cy="13.5" r="1.3" fill="#E0A93B"/><circle cx="12" cy="13.5" r="1.3" fill="#E0A93B"/><circle cx="15.5" cy="13.5" r="1.3" fill="#E0A93B"/></svg>
+        </span>
+        <span class="txt">
+          <span class="name">See my availability</span>
+          <span class="desc">Pick a time that works for you</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+      <div class="section-label">Message me</div>
+
+      <!-- Telegram -->
+      <a class="card" style="--accent:#2AABEE" href="https://t.me/AbdurahmanUA" target="_blank" rel="noopener noreferrer">
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5 4.3L2.9 11.5c-1 .4-1 1.8 0 2.1l4.6 1.5 1.8 5.6c.3.9 1.4 1.1 2 .4l2.5-2.6 4.7 3.5c.7.5 1.7.1 1.9-.7l3.2-15c.2-1-.8-1.9-1.8-1.5z" stroke="#2AABEE" stroke-width="1.6" stroke-linejoin="round"/><path d="M7.5 15.1L17 7.5" stroke="#2AABEE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="txt">
+          <span class="name">Telegram</span>
+          <span class="desc">@AbdurahmanUA — fastest reply</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+      <!-- WhatsApp -->
+      <a class="card" style="--accent:#25D366" href="https://wa.me/380502239016?text=Hi!%20I%27d%20like%20to%20book%20a%20free%20trial%20English%20lesson." target="_blank" rel="noopener noreferrer" id="wa-link">
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z" stroke="#25D366" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 8.2c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.5l.7 1.6c.1.2 0 .4 0 .5l-.5.6c-.1.2-.2.3 0 .6a6 6 0 0 0 2.6 2.3c.3.1.4.1.6-.1l.6-.7c.2-.2.3-.2.5-.1l1.5.8c.2.1.3.2.3.3 0 .3 0 .9-.3 1.2-.3.3-1 .8-1.6.8-1.4 0-3.4-1-5-2.9-1.2-1.4-2-3-2-3.6 0-.6.4-1.2.6-1.4z" fill="#25D366"/></svg>
+        </span>
+        <span class="txt">
+          <span class="name">WhatsApp</span>
+          <span class="desc">Chat or voice call</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+      <!-- Email -->
+      <a class="card" style="--accent:#C8B283" href="mailto:abdulrhman@alaasar.com?subject=English%20Lessons" >
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="#C8B283" stroke-width="1.7"/><path d="M4 7l8 6 8-6" stroke="#C8B283" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="txt">
+          <span class="name">Email</span>
+          <span class="desc">abdulrhman@alaasar.com</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+    </div>
+
+    <footer>
+      <div class="langs">
+        <span>العربية</span><span class="dot">·</span>
+        <span>English</span><span class="dot">·</span>
+        <span>Українська</span><span class="dot">·</span>
+        <span>Русский</span>
+      </div>
+      <div class="loc">
+        <span>Teaching online from Kyiv, Ukraine</span>
+        <svg class="flag-svg" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg" aria-label="Ukraine">
+          <rect width="24" height="8" y="0" fill="#0057B7"/>
+          <rect width="24" height="8" y="8" fill="#FFD500"/>
+        </svg>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>
