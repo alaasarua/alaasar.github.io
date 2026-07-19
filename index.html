@@ -236,6 +236,51 @@
     margin: 18px 0 2px 4px;
   }
 
+  /* ---------- Reviews ---------- */
+  .reviews {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .reviews-head {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 2px; padding: 0 2px;
+  }
+  .reviews-title {
+    font-size: 11px; font-weight: 700; letter-spacing: 1.6px;
+    text-transform: uppercase; color: var(--text-mute);
+  }
+  .reviews-stars { color: var(--gold); font-size: 13px; letter-spacing: 1px; }
+  .reviews-score { color: var(--gold-soft); font-weight: 700; font-size: 13px; margin-left: 3px; }
+
+  .review {
+    background: var(--navy-card);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    padding: 15px 17px 14px;
+    position: relative;
+  }
+  .review::before {
+    content: "\201C";
+    position: absolute; top: 2px; left: 12px;
+    font-family: 'Fraunces', serif;
+    font-size: 44px; line-height: 1;
+    color: var(--gold); opacity: 0.28;
+  }
+  .review blockquote {
+    font-size: 13px; line-height: 1.5;
+    color: var(--cream); margin: 0 0 10px;
+    padding-left: 20px;
+  }
+  .review figcaption {
+    display: flex; flex-direction: column; gap: 1px;
+    padding-left: 20px;
+  }
+  .review-name { font-size: 13px; font-weight: 600; color: var(--gold-soft); }
+  .review-meta { font-size: 11.5px; color: var(--text-mute); }
+
   /* ---------- Footer ---------- */
   footer { margin-top: 30px; text-align: center; }
   .langs {
@@ -367,6 +412,33 @@
       </a>
 
     </div>
+
+    <section class="reviews">
+      <div class="reviews-head">
+        <span class="reviews-title">What students say</span>
+        <span class="reviews-stars">★★★★★ <span class="reviews-score">5.0</span></span>
+      </div>
+
+      <figure class="review">
+        <blockquote>I absolutely love these English lessons. What I appreciate most is how much real speaking practice there is. My daughter has become noticeably more confident and fluent, and her progress so far has been remarkable. He keeps her motivated and makes every lesson feel relaxed and welcoming. We're delighted, and we'll happily keep going.</blockquote>
+        <figcaption><span class="review-name">Yeva T.</span><span class="review-meta">B1–B2 · Lessons for her daughter</span></figcaption>
+      </figure>
+
+      <figure class="review">
+        <blockquote>I genuinely enjoy every lesson. I can see real progress, and the atmosphere is always relaxed and encouraging. He explains everything clearly and keeps me motivated to push forward. A solid five out of five.</blockquote>
+        <figcaption><span class="review-name">Olena</span><span class="review-meta">C1–C2 · Advanced English</span></figcaption>
+      </figure>
+
+      <figure class="review">
+        <blockquote>Lessons are going wonderfully. I couldn't be happier with them.</blockquote>
+        <figcaption><span class="review-name">Maria L.</span><span class="review-meta">C1–C2 · Advanced English</span></figcaption>
+      </figure>
+
+      <figure class="review">
+        <blockquote>I couldn't recommend this teacher more highly.</blockquote>
+        <figcaption><span class="review-name">Anna P.</span><span class="review-meta">University admission abroad</span></figcaption>
+      </figure>
+    </section>
 
     <footer>
       <div class="langs">
